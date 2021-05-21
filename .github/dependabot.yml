@@ -1,0 +1,13 @@
+version: 2
+updates:
+- package-ecosystem: gradle
+  directory: "/"
+  schedule:
+    interval: monthly
+    time: "08:00"
+    timezone: Asia/Jakarta
+  open-pull-requests-limit: 100
+  ignore:
+  - dependency-name: com.android.tools.build:gradle
+    versions:
+    - 4.1.1
